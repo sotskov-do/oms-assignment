@@ -8,6 +8,7 @@ import (
 	"github.com/sotskov-do/oms-assignment/internal/storage"
 )
 
+//go:generate minimock -i github.com/sotskov-do/oms-assignment/internal/service/buildings.BuildingsService -o ../mocks/
 type BuildingsService interface {
 	GetBuildings(ctx context.Context) (models.BuildingSlice, error)
 	GetBuilding(ctx context.Context, id int) (*models.Building, error)
