@@ -3,6 +3,28 @@ Create a REST API to manage buildings and apartments using Go-Fiber for the web
 framework and SQLBoiler for ORM. The database will consist of two tables:
 &quot;building&quot; and &quot;apartment&quot;.
 
+## Run using Docker
+
+### Project setup
+
+Create a `.env` file at the root of the repository:
+
+```bash
+cp .env.example .env
+```
+
+Make adjustments to the environment variables as needed.
+
+### Building images and running containers
+
+At the root of the repository, run the command:
+
+```bash
+docker-compose up --build
+```
+
+---
+
 ### Tools and Technologies:
 * Language: Go (Golang)
 * Framework: Go-Fiber
